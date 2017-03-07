@@ -52,7 +52,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;./common/inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -157,6 +157,7 @@
     <ClCompile Include="..\..\darknet\src\voxel.c" />
     <ClCompile Include="..\..\darknet\src\writing.c" />
     <ClCompile Include="..\..\darknet\src\yolo.c" />
+    <ClCompile Include="pthread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="..\..\darknet\src\activation_kernels.cu" />

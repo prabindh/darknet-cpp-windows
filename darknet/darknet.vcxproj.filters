@@ -201,6 +201,9 @@
     <ClCompile Include="..\..\darknet\src\yolo.c">
       <Filter>cpu</Filter>
     </ClCompile>
+    <ClCompile Include="pthread.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="cpu">
