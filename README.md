@@ -1,5 +1,6 @@
 # darknet-cpp-windows
-Visual studio project files for Darknet-cpp
+
+Windows support for Darknet-cpp. This repository provides visual studio project files for Darknet-cpp. This repository does not require additional libraries like pthread, and provides all requirements integrated.
 
 - For 2013 Visual Studio
 - Needs CUDA 8.0 (and its environment settings correctly defined)
