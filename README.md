@@ -29,4 +29,15 @@ darknet-cpp-windows\darknet\darknet.sln
 
 darknet-cpp-windows\bin\win64\$(Configuration)\arapaho.exe
 
-- This will run the arapaho C++ wrapper, and generate output for the provided image.
+- This will run the arapaho C++ wrapper, and generate output for the provided image. Example output below:
+
+`
+....
+Image data = 000001362EF87060, w = 992, h = 620
+Detect: Resizing image to match network
+l.softmax_tree = 0000000000000000, nms = 0.400000
+Detected 1 objects
+Box #0: x,y,w,h = [0.406386, 0.283149, 0.384096, 0.509924]
+`
+
+For a brief about Arapaho C++ API, refer to https://github.com/prabindh/darknet/blob/master/arapaho/arapaho_readme.txt
