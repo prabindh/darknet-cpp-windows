@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "darknet", "darknet.vcxproj", "{55F71337-32A6-4C26-8CBA-A06A9183D6F2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arapaho", "..\arapaho\arapaho.vcxproj", "{DC4CF4EA-0BF8-47B1-AD27-713E9EADD87C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55F71337-32A6-4C26-8CBA-A06A9183D6F2} = {55F71337-32A6-4C26-8CBA-A06A9183D6F2}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

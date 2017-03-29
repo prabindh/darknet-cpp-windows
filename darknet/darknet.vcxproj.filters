@@ -31,6 +31,9 @@
     <CudaCompile Include="..\..\darknet\src\network_kernels.cu">
       <Filter>gpu</Filter>
     </CudaCompile>
+    <CudaCompile Include="..\..\darknet\src\deconvolutional_kernels.cu">
+      <Filter>gpu</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\darknet\src\activation_layer.c">
@@ -202,6 +205,12 @@
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="pthread.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\darknet\src\deconvolutional_layer.c">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\darknet\src\lsd.c">
       <Filter>cpu</Filter>
     </ClCompile>
   </ItemGroup>

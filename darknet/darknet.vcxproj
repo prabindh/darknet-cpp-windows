@@ -47,12 +47,12 @@
     <CodeAnalysisRuleAssemblies />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)'=='x64'">
-    <OutDir>./bin/win64/$(Configuration)/</OutDir>
+    <OutDir>../bin/win64/$(Configuration)/</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS;_DEBUG</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;./common/inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -121,6 +121,7 @@
     <ClCompile Include="..\..\darknet\src\crop_layer.c" />
     <ClCompile Include="..\..\darknet\src\cuda.c" />
     <ClCompile Include="..\..\darknet\src\data.c" />
+    <ClCompile Include="..\..\darknet\src\deconvolutional_layer.c" />
     <ClCompile Include="..\..\darknet\src\demo.c" />
     <ClCompile Include="..\..\darknet\src\detection_layer.c" />
     <ClCompile Include="..\..\darknet\src\detector.c" />
@@ -134,6 +135,7 @@
     <ClCompile Include="..\..\darknet\src\layer.c" />
     <ClCompile Include="..\..\darknet\src\list.c" />
     <ClCompile Include="..\..\darknet\src\local_layer.c" />
+    <ClCompile Include="..\..\darknet\src\lsd.c" />
     <ClCompile Include="..\..\darknet\src\matrix.c" />
     <ClCompile Include="..\..\darknet\src\maxpool_layer.c" />
     <ClCompile Include="..\..\darknet\src\network.c" />
@@ -166,6 +168,7 @@
     <CudaCompile Include="..\..\darknet\src\col2im_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\convolutional_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\crop_layer_kernels.cu" />
+    <CudaCompile Include="..\..\darknet\src\deconvolutional_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\dropout_layer_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\im2col_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\maxpool_layer_kernels.cu" />
