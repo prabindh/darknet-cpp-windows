@@ -21,6 +21,8 @@ https://github.com/prabindh/darknet-cpp-windows
 
 darknet-cpp-windows\darknet\darknet.sln
 
+- Change the OpenCV folder path if needed (default expected to be 2 levels above, ..\..\opencv3\build\x64\vc12\lib)
+
 - Build the project arapaho, which will also build the darknet project dependency
 
 - Copy the required data, weight, cfg and input image file for detection into the arapaho folder. All the files need to be named as {input.cfg, input.data, input.jpg or input.mp4, input.weights}. The names can be changed in the darknet\arapaho\test.cpp file.
