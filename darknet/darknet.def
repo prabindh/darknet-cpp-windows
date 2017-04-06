@@ -11,3 +11,6 @@ EXPORTS
 	parse_network_cfg
 	load_weights
 	get_region_boxes
+    get_labels
+    read_data_cfg
+    option_find_str

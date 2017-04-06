@@ -52,7 +52,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS;_DEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS;</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;./common/inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
