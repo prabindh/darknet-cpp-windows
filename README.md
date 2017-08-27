@@ -2,7 +2,7 @@
 
 Windows support for Darknet-cpp. This repository provides visual studio project files for Darknet-cpp. This repository does not require additional libraries like pthread, and provides all requirements integrated.
 
-- For 2013 Visual Studio
+- For 2015 Visual Studio
 - Needs CUDA 8.0 (and its environment settings correctly defined), and OpenCV3
 
 ## Steps to build darknet-cpp-windows:
