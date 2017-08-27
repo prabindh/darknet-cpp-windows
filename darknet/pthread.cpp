@@ -43,6 +43,7 @@
 * Fixes pthread_barrier_destroy() to wait for threads to exit the barrier.
 */
 #include <pthread.h>
+
 static volatile long _pthread_cancelling;
 
 static int _pthread_concur;
