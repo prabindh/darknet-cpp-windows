@@ -10,8 +10,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arapaho", "..\arapaho\arapa
 		{55F71337-32A6-4C26-8CBA-A06A9183D6F2} = {55F71337-32A6-4C26-8CBA-A06A9183D6F2}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "genesisarapaho", "..\genesisarapaho\genesisarapaho.vcxproj", "{D1034CB0-C145-4407-BB89-DDDA8FD9C54E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
