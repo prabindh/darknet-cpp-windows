@@ -28,9 +28,6 @@
     <CudaCompile Include="..\..\darknet\src\maxpool_layer_kernels.cu">
       <Filter>gpu</Filter>
     </CudaCompile>
-    <CudaCompile Include="..\..\darknet\src\network_kernels.cu">
-      <Filter>gpu</Filter>
-    </CudaCompile>
     <CudaCompile Include="..\..\darknet\src\deconvolutional_kernels.cu">
       <Filter>gpu</Filter>
     </CudaCompile>
@@ -40,9 +37,6 @@
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\activations.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\art.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\avgpool_layer.c">
@@ -57,22 +51,7 @@
     <ClCompile Include="..\..\darknet\src\box.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\captcha.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\cifar.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\classifier.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\coco.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\darknet\src\col2im.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\compare.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\connected_layer.c">
@@ -102,19 +81,10 @@
     <ClCompile Include="..\..\darknet\src\detection_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\detector.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\dice.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\darknet\src\dropout_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\gemm.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\go.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\gru_layer.c">
@@ -144,9 +114,6 @@
     <ClCompile Include="..\..\darknet\src\network.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\nightmare.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\darknet\src\normalization_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
@@ -162,13 +129,7 @@
     <ClCompile Include="..\..\darknet\src\reorg_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\rnn.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\darknet\src\rnn_layer.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\rnn_vid.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\route_layer.c">
@@ -180,28 +141,10 @@
     <ClCompile Include="..\..\darknet\src\softmax_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\super.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\swag.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\tag.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\darknet\src\tree.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="..\..\darknet\src\utils.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\voxel.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\writing.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\darknet\src\yolo.c">
       <Filter>cpu</Filter>
     </ClCompile>
     <ClCompile Include="pthread.cpp">
@@ -210,7 +153,17 @@
     <ClCompile Include="..\..\darknet\src\deconvolutional_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\lsd.c">
+    <ClCompile Include="..\..\darknet\src\yolo_layer.c" />
+    <ClCompile Include="..\..\darknet\src\upsample_layer.c">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\darknet\src\logistic_layer.c">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\darknet\src\l2norm_layer.c">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\darknet\src\lstm_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
   </ItemGroup>

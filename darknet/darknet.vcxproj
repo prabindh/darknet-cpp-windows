@@ -53,7 +53,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS;</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;./common/inc;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;../../darknet/include;%OPENCV_DIR%/build/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -64,7 +64,7 @@
     <CudaCompile>
       <CodeGeneration>compute_20,sm_20;compute_30,sm_30;compute_35,sm_35;compute_37,sm_37;compute_50,sm_50;compute_52,sm_52;compute_60,sm_60;</CodeGeneration>
       <AdditionalOptions>-Xcompiler "/wd 4819" %(AdditionalOptions)</AdditionalOptions>
-      <Include>./;./common/inc</Include>
+      <Include>./;</Include>
       <Defines>WIN32</Defines>
     </CudaCompile>
   </ItemDefinitionGroup>
@@ -103,17 +103,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\darknet\src\activations.c" />
     <ClCompile Include="..\..\darknet\src\activation_layer.c" />
-    <ClCompile Include="..\..\darknet\src\art.c" />
     <ClCompile Include="..\..\darknet\src\avgpool_layer.c" />
     <ClCompile Include="..\..\darknet\src\batchnorm_layer.c" />
     <ClCompile Include="..\..\darknet\src\blas.c" />
     <ClCompile Include="..\..\darknet\src\box.c" />
-    <ClCompile Include="..\..\darknet\src\captcha.c" />
-    <ClCompile Include="..\..\darknet\src\cifar.c" />
-    <ClCompile Include="..\..\darknet\src\classifier.c" />
-    <ClCompile Include="..\..\darknet\src\coco.c" />
     <ClCompile Include="..\..\darknet\src\col2im.c" />
-    <ClCompile Include="..\..\darknet\src\compare.c" />
     <ClCompile Include="..\..\darknet\src\connected_layer.c" />
     <ClCompile Include="..\..\darknet\src\convolutional_layer.c" />
     <ClCompile Include="..\..\darknet\src\cost_layer.c" />
@@ -124,41 +118,33 @@
     <ClCompile Include="..\..\darknet\src\deconvolutional_layer.c" />
     <ClCompile Include="..\..\darknet\src\demo.c" />
     <ClCompile Include="..\..\darknet\src\detection_layer.c" />
-    <ClCompile Include="..\..\darknet\src\detector.c" />
-    <ClCompile Include="..\..\darknet\src\dice.c" />
     <ClCompile Include="..\..\darknet\src\dropout_layer.c" />
     <ClCompile Include="..\..\darknet\src\gemm.c" />
-    <ClCompile Include="..\..\darknet\src\go.c" />
     <ClCompile Include="..\..\darknet\src\gru_layer.c" />
     <ClCompile Include="..\..\darknet\src\im2col.c" />
     <ClCompile Include="..\..\darknet\src\image.c" />
+    <ClCompile Include="..\..\darknet\src\l2norm_layer.c" />
     <ClCompile Include="..\..\darknet\src\layer.c" />
     <ClCompile Include="..\..\darknet\src\list.c" />
     <ClCompile Include="..\..\darknet\src\local_layer.c" />
-    <ClCompile Include="..\..\darknet\src\lsd.c" />
+    <ClCompile Include="..\..\darknet\src\logistic_layer.c" />
+    <ClCompile Include="..\..\darknet\src\lstm_layer.c" />
     <ClCompile Include="..\..\darknet\src\matrix.c" />
     <ClCompile Include="..\..\darknet\src\maxpool_layer.c" />
     <ClCompile Include="..\..\darknet\src\network.c" />
-    <ClCompile Include="..\..\darknet\src\nightmare.c" />
     <ClCompile Include="..\..\darknet\src\normalization_layer.c" />
     <ClCompile Include="..\..\darknet\src\option_list.c" />
     <ClCompile Include="..\..\darknet\src\parser.c" />
     <ClCompile Include="..\..\darknet\src\region_layer.c" />
     <ClCompile Include="..\..\darknet\src\reorg_layer.c" />
-    <ClCompile Include="..\..\darknet\src\rnn.c" />
     <ClCompile Include="..\..\darknet\src\rnn_layer.c" />
-    <ClCompile Include="..\..\darknet\src\rnn_vid.c" />
     <ClCompile Include="..\..\darknet\src\route_layer.c" />
     <ClCompile Include="..\..\darknet\src\shortcut_layer.c" />
     <ClCompile Include="..\..\darknet\src\softmax_layer.c" />
-    <ClCompile Include="..\..\darknet\src\super.c" />
-    <ClCompile Include="..\..\darknet\src\swag.c" />
-    <ClCompile Include="..\..\darknet\src\tag.c" />
     <ClCompile Include="..\..\darknet\src\tree.c" />
+    <ClCompile Include="..\..\darknet\src\upsample_layer.c" />
     <ClCompile Include="..\..\darknet\src\utils.c" />
-    <ClCompile Include="..\..\darknet\src\voxel.c" />
-    <ClCompile Include="..\..\darknet\src\writing.c" />
-    <ClCompile Include="..\..\darknet\src\yolo.c" />
+    <ClCompile Include="..\..\darknet\src\yolo_layer.c" />
     <ClCompile Include="pthread.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -172,7 +158,6 @@
     <CudaCompile Include="..\..\darknet\src\dropout_layer_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\im2col_kernels.cu" />
     <CudaCompile Include="..\..\darknet\src\maxpool_layer_kernels.cu" />
-    <CudaCompile Include="..\..\darknet\src\network_kernels.cu" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

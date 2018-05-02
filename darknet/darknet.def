@@ -7,10 +7,11 @@ EXPORTS
 	network_predict
 	set_batch_network
 	free_ptrs
+    free_detections
 	max_index
 	parse_network_cfg
 	load_weights
-	get_region_boxes
+	get_network_boxes
     get_labels
     read_data_cfg
     option_find_str
