@@ -1,6 +1,6 @@
 # darknet-cpp-windows
 
-Windows support for Darknet-cpp. This repository provides visual studio project files for Darknet-cpp. This repository does not require additional libraries like pthread, and provides all requirements integrated.
+Windows support for Darknet-cpp. This repository provides visual studio project files for Darknet-cpp. This repository does not require additional libraries like pthread, and provides all requirements integrated. It supports Yolo v3.
 
 - For 2015 Visual Studio
 - Needs CUDA 8.0 (and its environment settings correctly defined), and OpenCV3
