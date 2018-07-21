@@ -16,3 +16,4 @@ EXPORTS
     read_data_cfg
     option_find_str
     free_image
+    free_network
