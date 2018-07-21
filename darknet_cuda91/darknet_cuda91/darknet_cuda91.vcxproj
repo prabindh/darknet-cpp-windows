@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\darknet\src\activation_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\avgpool_layer_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\blas_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\col2im_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\convolutional_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\crop_layer_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\deconvolutional_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\dropout_layer_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\im2col_kernels.cu" />
+    <CudaCompile Include="..\..\..\darknet\src\maxpool_layer_kernels.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\darknet\src\activations.c" />
+    <ClCompile Include="..\..\..\darknet\src\activation_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\avgpool_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\batchnorm_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\blas.c" />
+    <ClCompile Include="..\..\..\darknet\src\box.c" />
+    <ClCompile Include="..\..\..\darknet\src\col2im.c" />
+    <ClCompile Include="..\..\..\darknet\src\connected_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\convolutional_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\cost_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\crnn_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\crop_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\cuda.c" />
+    <ClCompile Include="..\..\..\darknet\src\data.c" />
+    <ClCompile Include="..\..\..\darknet\src\deconvolutional_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\demo.c" />
+    <ClCompile Include="..\..\..\darknet\src\detection_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\dropout_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\gemm.c" />
+    <ClCompile Include="..\..\..\darknet\src\gru_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\im2col.c" />
+    <ClCompile Include="..\..\..\darknet\src\image.c" />
+    <ClCompile Include="..\..\..\darknet\src\l2norm_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\list.c" />
+    <ClCompile Include="..\..\..\darknet\src\local_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\logistic_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\lstm_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\matrix.c" />
+    <ClCompile Include="..\..\..\darknet\src\maxpool_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\network.c" />
+    <ClCompile Include="..\..\..\darknet\src\normalization_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\option_list.c" />
+    <ClCompile Include="..\..\..\darknet\src\parser.c" />
+    <ClCompile Include="..\..\..\darknet\src\region_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\reorg_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\rnn_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\route_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\shortcut_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\softmax_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\tree.c" />
+    <ClCompile Include="..\..\..\darknet\src\upsample_layer.c" />
+    <ClCompile Include="..\..\..\darknet\src\utils.c" />
+    <ClCompile Include="..\..\..\darknet\src\yolo_layer.c" />
+    <ClCompile Include="pthread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\darknet\src\activations.h" />
+    <ClInclude Include="..\..\..\darknet\src\activation_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\avgpool_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\batchnorm_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\blas.h" />
+    <ClInclude Include="..\..\..\darknet\src\box.h" />
+    <ClInclude Include="..\..\..\darknet\src\bugfixes.h" />
+    <ClInclude Include="..\..\..\darknet\src\classifier.h" />
+    <ClInclude Include="..\..\..\darknet\src\col2im.h" />
+    <ClInclude Include="..\..\..\darknet\src\connected_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\convolutional_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\cost_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\crnn_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\crop_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\cuda.h" />
+    <ClInclude Include="..\..\..\darknet\src\data.h" />
+    <ClInclude Include="..\..\..\darknet\src\deconvolutional_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\demo.h" />
+    <ClInclude Include="..\..\..\darknet\src\detection_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\dropout_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\gemm.h" />
+    <ClInclude Include="..\..\..\darknet\src\gru_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\im2col.h" />
+    <ClInclude Include="..\..\..\darknet\src\image.h" />
+    <ClInclude Include="..\..\..\darknet\src\l2norm_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\list.h" />
+    <ClInclude Include="..\..\..\darknet\src\local_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\logistic_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\lstm_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\matrix.h" />
+    <ClInclude Include="..\..\..\darknet\src\maxpool_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\network.h" />
+    <ClInclude Include="..\..\..\darknet\src\normalization_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\option_list.h" />
+    <ClInclude Include="..\..\..\darknet\src\parser.h" />
+    <ClInclude Include="..\..\..\darknet\src\region_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\reorg_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\rnn_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\route_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\shortcut_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\softmax_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\stb_image.h" />
+    <ClInclude Include="..\..\..\darknet\src\stb_image_write.h" />
+    <ClInclude Include="..\..\..\darknet\src\tree.h" />
+    <ClInclude Include="..\..\..\darknet\src\upsample_layer.h" />
+    <ClInclude Include="..\..\..\darknet\src\utils.h" />
+    <ClInclude Include="..\..\..\darknet\src\yolo_layer.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78CAE573-734D-4B14-BF92-8F31D4FF686E}</ProjectGuid>
+    <RootNamespace>darknet_cuda91</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../bin/win64/$(Configuration)/</OutDir>
+    <IntDir>$(Platform)/$(Configuration)/</IntDir>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;../../../darknet/include;%OPENCV_DIR%/build/include</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cuda.lib;curand.lib;cublas.lib;cudnn.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>darknet_cuda91.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_30,sm_30;compute_35,sm_35;compute_37,sm_37;compute_50,sm_50;compute_52,sm_52;compute_60,sm_60;</CodeGeneration>
+      <Defines>WIN32</Defines>
+      <Runtime>MTd</Runtime>
+      <Include>./;</Include>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.1.targets" />
+  </ImportGroup>
+</Project>

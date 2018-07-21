@@ -1,0 +1,19 @@
+LIBRARY DARKNET_CUDA91.DLL
+EXPORTS
+	do_nms_sort
+	do_nms_obj
+	resize_image
+	make_image
+	network_predict
+	set_batch_network
+	free_ptrs
+    free_detections
+	max_index
+	parse_network_cfg
+	load_weights
+	get_network_boxes
+    get_labels
+    read_data_cfg
+    option_find_str
+    free_image
+    free_network
