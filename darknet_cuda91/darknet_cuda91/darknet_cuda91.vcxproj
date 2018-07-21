@@ -151,7 +151,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>../bin/win64/$(Configuration)/</OutDir>
+    <OutDir>../../bin/win64/$(Configuration)/</OutDir>
     <IntDir>$(Platform)/$(Configuration)/</IntDir>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
