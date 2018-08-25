@@ -123,6 +123,7 @@
     <ClCompile Include="..\..\darknet\src\gru_layer.c" />
     <ClCompile Include="..\..\darknet\src\im2col.c" />
     <ClCompile Include="..\..\darknet\src\image.c" />
+    <ClCompile Include="..\..\darknet\src\iseg_layer.c" />
     <ClCompile Include="..\..\darknet\src\l2norm_layer.c" />
     <ClCompile Include="..\..\darknet\src\layer.c" />
     <ClCompile Include="..\..\darknet\src\list.c" />

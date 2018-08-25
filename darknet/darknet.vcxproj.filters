@@ -166,6 +166,9 @@
     <ClCompile Include="..\..\darknet\src\lstm_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\darknet\src\iseg_layer.c">
+      <Filter>cpu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="cpu">
