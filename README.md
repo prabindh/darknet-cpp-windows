@@ -2,9 +2,10 @@
 
 Windows support for Darknet-cpp. This repository provides visual studio project files for Darknet-cpp. This repository does not require additional libraries like pthread, and provides all requirements integrated. It supports Yolo v3.
 
-- For 2015 Visual Studio
+- Support for 2015, 2017 Visual Studio versions, with one of below.
 - Needs CUDA 8.0 (and its environment settings correctly defined, with Visual studio integration enabled), and CUDNN, OpenCV3 or
 - Needs CUDA 9.1 (and its environment settings correctly defined, with Visual studio integration enabled), and CUDNN, OpenCV3
+- Needs CUDA 10.1 (and its environment settings correctly defined, with Visual studio integration enabled), and CUDNN, OpenCV3.4
 
 ## Steps to build darknet-cpp-windows:
 
@@ -16,15 +17,13 @@ https://github.com/prabindh/darknet
 
 https://github.com/prabindh/darknet-cpp-windows
 
-- [This step is not required anymore] Copy the "common" folder from Nvidia GPU Computing Toolkit into darknet-cpp-windows\darknet\ folder (in the same location as the darknet.vcxproj file).
-
 - Open the below solution file in Visual Studio
 
-darknet-cpp-windows\darknet\darknet.sln (for CUDA8.0),
+darknet-cpp-windows\darknet\darknet.sln (for CUDA10.1),
 
 darknet-cpp-windows\darknet_cuda91\darknet_cuda91.sln (for CUDA9.1),
 
-- Change the OpenCV folder path if needed (default expected to be 2 levels above, ..\..\opencv3\build\x64\vc12\lib)
+- Change the OpenCV folder path if needed (default expected to be 2 levels above, ..\..\opencv3\build\x64\vc15\lib)
 
 - Build the project arapaho, which will also build the darknet project dependency
 
@@ -36,7 +35,6 @@ darknet-cpp-windows\bin\win64\$(Configuration)\arapaho.exe
 
 - This will run the arapaho C++ wrapper, and generate output for the provided image, and show each frame with detected regions in a Window. Example output below:
 
-`
 [YOLOV2]
 ....
 Image data = 000001362EF87060, w = 992, h = 620
