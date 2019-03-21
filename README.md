@@ -19,7 +19,7 @@ https://github.com/prabindh/darknet-cpp-windows
 
 - Open the below solution file in Visual Studio
 
-darknet-cpp-windows\darknet\darknet.sln (for CUDA10.1),
+darknet-cpp-windows\darknet\darknet.sln (for CUDA10.1 and CUDNN7),
 
 darknet-cpp-windows\darknet_cuda91\darknet_cuda91.sln (for CUDA9.1),
 
@@ -28,6 +28,12 @@ darknet-cpp-windows\darknet_cuda91\darknet_cuda91.sln (for CUDA9.1),
 - Build the project arapaho, which will also build the darknet project dependency
 
 - Copy the required data, weight, cfg and input image file for detection into the arapaho folder. All the files need to be named as {input.cfg, input.data, input.jpg or input.mp4, input.weights}. The names can be changed in the darknet\arapaho\test.cpp file.
+
+(Note: Yolov3 default model config will not fit on a GPU like a QuadroM, hence the tiny config can be used for checking)
+
+Yolov3 and Tiny weights can both be obtained from the links at - https://pjreddie.com/darknet/yolo/
+
+The corresponding configs are available at the darknet tree in "cfg" folder.
 
 - Run the generated binary arapaho.exe, for detection, from 
 
