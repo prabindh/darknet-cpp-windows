@@ -144,7 +144,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>OPENCV;WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);GPU;CUDNN;PTHREAD_WINDOWS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;./common/inc;../../darknet/src/;../../darknet/include/;../darknet/;../../opencv3/build/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

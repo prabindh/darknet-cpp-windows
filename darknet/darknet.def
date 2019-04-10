@@ -17,3 +17,5 @@ EXPORTS
     option_find_str
     free_image
     free_network
+    ipl_to_image
+    letterbox_image
