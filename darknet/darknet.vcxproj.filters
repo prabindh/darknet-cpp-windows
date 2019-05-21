@@ -75,9 +75,6 @@
     <ClCompile Include="..\..\darknet\src\data.c">
       <Filter>cpu</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\darknet\src\demo.c">
-      <Filter>cpu</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\darknet\src\detection_layer.c">
       <Filter>cpu</Filter>
     </ClCompile>
@@ -177,5 +174,8 @@
     <Filter Include="gpu">
       <UniqueIdentifier>{e0362ae5-a177-43c3-8a0e-91008a0cd2de}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darknet.def" />
   </ItemGroup>
 </Project>
